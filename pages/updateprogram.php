@@ -24,7 +24,7 @@ if(isset($_POST['btn_submit'])){
     move_uploaded_file($path,"../assert/upload/".$image);
     $data = "../assert/upload/".$image;
 
-    $update = "UPDATE `form` SET `Name`='$name',`Fname`='$fname',`Address`='$address',`Age`='$age',`DOB`='$data',`Domicile`='$domi',`Religion`='$religion',`Phone`='$phone',`Cnic`='$cnic',`Email`='$email',`Gender`='$gender',`Trade`='$country',`Image`='$data',`Hobby`='$hobby',`Country`='$country' WHERE ID = $id";
+    $update = "UPDATE `form` SET `Name`='$name',`Fname`='$fname',`Address`='$address',`Age`='$age',`DOB`='$data',`Domicile`='$domi',`Religion`='$religion',`Phone`='$phone',`Cnic`='$cnic',`Email`='$email',`Gender`='$gender',`Trade`='$course',`Image`='$data',`Hobby`='$hobby',`Country`='$country' WHERE ID = $id";
     mysqli_query($connect,$update);
     header("location: data.php");
 }

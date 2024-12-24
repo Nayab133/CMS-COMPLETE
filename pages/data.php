@@ -121,7 +121,7 @@
                                             <td>
                                                 <a href="delete.php?id=<?php echo $row['ID']; ?>" class="btn btn-outline-danger"><i class="bi bi-trash"></i></a>
                                                 <a href="update.php?id=<?php echo $row['ID']; ?>" class="btn btn-outline-warning"><i class="bi bi-pencil-square"></i></a>
-                                                <a href="read.php" class="btn btn-outline-light"><i class="bi bi-plus"></i></a>
+                                                <a href="welcome.php" class="btn btn-outline-light"><i class="bi bi-plus"></i></a>
                                             </td>
                                         </tr>
                                         <?php  } ?>
