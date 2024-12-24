@@ -66,7 +66,9 @@ if (empty($_SESSION['emaill'])) {
                 <!-- Topbar -->
                 <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
 
+              
                     <!-- Sidebar Toggle (Topbar) -->
+                    
                     <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
                         <i class="fa fa-bars"></i>
                     </button>
@@ -76,6 +78,11 @@ if (empty($_SESSION['emaill'])) {
                             <a href="logout.php" onclick="return confirm('Are you sure you want to logout?')"><i class="bi bi-box-arrow-right fa-lg"></i></a>   
                     </div>
                 </nav>
+                <?php if(isset($_GET["Alert"])) { ?>
+                            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                                <strong>Alert : </strong> <?php echo $_GET["Alert"];?>
+                            </div>
+                <?php } ?> 
 
 
 <div class="container-fluid  ">

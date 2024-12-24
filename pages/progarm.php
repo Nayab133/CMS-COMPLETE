@@ -25,7 +25,7 @@ if(isset($_POST["btn_submit"]))
     // $insert ="INSERT INTO `form`( `Name`, `Fname`, `Address`, `Age`, `DOB`, `Domicile`, `Religion`, `Phone`, `Cnic`, `Email`, `Gender`, `Trade`, `Image`) VALUES ('$name','$fnmae','$address,'$age','$date','$domi','$religion','$phone','$cnic','$email','$gene','$course','$data')";
     $insert = "INSERT INTO `form`( `Name`, `Fname`, `Address`, `Age`, `DOB`, `Domicile`, `Religion`, `Phone`, `Cnic`, `Email`, `Gender`, `Trade`, `Image`, `Hobby`, `Country`) VALUES ('$name','$fname','$address','$age','$date','$domi','$religion','$phone','$cnic','$email','$gender','$course','$data','$string','$country')";
     mysqli_query($connect,$insert);
-    header("location: data.php");
+    header("location: welcome.php?Alert=Data Succesfully Inter.");
     exit();  
 }
 ?>
